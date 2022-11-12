@@ -6,112 +6,134 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="form_text">Example form</h1>
-        <div class="flex">
-            <p class="compute">All: </p>
-            <p class="compute">Need: </p>
-            <p class="compute">Success: </p>
-            <p class="compute">Error: </p>
+    <main>
+
+        <h1>Example form</h1>
+        <div class="p">
+            <p class="all">All: </p>
+            <p class="need">Need: </p>
+            <p class="success">Success: </p>
+            <p class="error">Error: </p>
         </div>
-
-        <form name="reg" class="forms">
-            <div class="box">
-                <div class="input_p blue1">
-                    <p class="input_text">name</p>
-                    <input name="name" class="black_border" type="text">
-
-                    <div class="error_img"></div>
+        <form name="subscribe">
+            <div class="div blue1">
+                <div class="l">
+                    <label>Name</label>
+                    <input class="blue" type="text" name="name" id="1" placeholder="Name">
                 </div>
-
-                <div class="input_p blue1">
-                    <p class="input_text">age</p>
-                    <input name="age" class="black_border" type="text">
-
-                    <div class="error_img"></div>
-
+                <div class="r">
+                    <img src="./img/10.png" alt="">
                 </div>
-
-
-
-                <div class="input_p blue1">
-                    <p class="input_text">Surname</p>
-                    <input name="surname" class="black_border" type="text">
-
-                    <div class="error_img"></div>
+            </div>
+            <div class="div">
+                <div class="l">
+                    <label>Surname</label>
+                    <input type="text" name="surname" id="2" placeholder="Surname">
                 </div>
-
-
-                <div class="input_p blue1">
-                    <p class="input_text">Email adress</p>
-                    <input name="email" class="black_border" type="text">
-
-
-                    <div class="error_img"></div>
+                <div class="r">
+                    <img src="./img/10.png" alt="">
                 </div>
-
-
-                <div class="input_p">
-                    <p class="input_text">Phone number</p>
-                    <input name="phone" class="black_border" type="text">
-
-
+            </div>
+            <div class="div blue1">
+                <div class="l">
+                    <label>Email</label>
+                    <input class="blue" type="text" name="email" id="3" placeholder="Email">
                 </div>
-
-                <div class="input_p">
-                    <p class="input_text">Your Mom’s name</p>
-                    <input name="mom" class="black_border" type="text">
+                <div class="r">
+                    <img src="./img/10.png" alt="">
                 </div>
-
-                <div class="input_p">
-                    <p class="input_text">Your Pap’s name</p>
-                    <input name="dad" class="black_border" type="text">
+            </div>
+            <div class="div">
+                <div class="l">
+                    <label>Number</label>
+                    <input type="text" name="number" id="4" placeholder="Number">
                 </div>
-
-                <div class="input_p blue1">
-                    <p class="input_text">About You</p>
-                    <input name="aboutYou" class="black_border" type="text">
-                    <div class="error_img"></div>
+                <div class="r">
+                    <img src="./img/10.png" alt="" placeholder="Surname">
                 </div>
-
-                <div class="input_p">
-                    <p class="input_text">What is JavaScript?</p>
-                    <input name="js" class="black_border" type="text">
+            </div>
+            <div class="div">
+                <div class="l">
+                    <label>Mother's name</label>
+                    <input type="text" name="mother name" id="5" placeholder="Mother's name">
                 </div>
-                <div class="input_p blue1">
-                    <p class="input_text">What is HTML?</p>
-                    <input name="html" class="black_border" type="text">
-                    <div class="error_img"></div>
+                <div class="r">
+                    <img src="./img/10.png" alt="">
                 </div>
-
-                <div class="input_p blue1">
-                    <p class="input_text">What is CSS?</p>
-                    <input name="css" class="black_border" type="text">
-                    <div class="error_img"></div>
-
+            </div>
+            <div class="div">
+                <div class="l">
+                    <label>Father's name</label>
+                    <input type="text" name="father name" id="6" placeholder="Father's name">
                 </div>
-
-                <div class="input_p blue1">
-                    <p class="input_text">Your favourite car</p>
-                    <input name="favouriteCar" class="black_border" type="text">
-                    <div class="error_img"></div>
+                <div class="r">
+                    <img src="./img/10.png" alt="">
                 </div>
-            </div><!-- /box -->
-
-
-            <div class="btn">
-
-                <button class="submit">Save changes</button>
-
+            </div>
+            <div class="div blue1">
+                <div class="l">
+                    <label>Age</label>
+                    <input class="blue" type="text" name="age" id="7" placeholder="Age">
+                </div>
+                <div class="r">
+                    <img src="./img/10.png" alt="">
+                </div>
+            </div>
+            <div class="div blue1">
+                <div class="l">
+                    <label>About you</label>
+                    <input class="blue" type="text" name="about you" id="8" placeholder="About you">
+                </div>
+                <div class="r">
+                    <img src="./img/10.png" alt="">
+                </div>
+            </div>
+            <div class="div blue1">
+                <div class="l">
+                    <label>JS</label>
+                    <input class="blue" type="text" name="js" id="9" placeholder="JS">
+                </div>
+                <div class="r">
+                    <img src="./img/10.png" alt="">
+                </div>
+            </div>
+            <div class="div blue1">
+                <div class="l">
+                    <label>HTML</label>
+                    <input class="blue" type="text" name="html" id="10" placeholder="HTML">
+                </div>
+                <div class="r">
+                    <img src="./img/10.png" alt="">
+                </div>
+            </div>
+            <div class="div blue1">
+                <div class="l">
+                    <label>CSS</label>
+                    <input class="blue" type="text" name="css" id="11" placeholder="CSS">
+                </div>
+                <div class="r">
+                    <img src="./img/10.png" alt="">
+                </div>
+            </div>
+            <div class="div">
+                <div class="l">
+                    <label>Car</label>
+                    <input type="text" name="car" id="12" placeholder="Car">
+                </div>
+                <div class="r">
+                    <img src="./img/10.png" alt="">
+                </div>
             </div>
         </form>
-
-
-    </div>
+        <button>Save changes</button>
+    </main>
 
 
 </body>

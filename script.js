@@ -1,33 +1,69 @@
-let inps = document.querySelectorAll('.myBlue input')
+let inps = document.querySelectorAll('input')
+let form = document.forms.subscribe
+let all = document.querySelector('.all')
+let need = document.querySelector('.need')
+let success = document.querySelector('.success')
+let error = document.querySelector('.error')
+let imgs = document.querySelectorAll('img')
 let btn = document.querySelector('button')
-let inpP = document.querySelector('.input_text')
-let bg = document.querySelector('input_p')
-let img = document.querySelectorAll('.error_img')
-let form = document.forms.form
-let err = 0
+let blue = document.querySelectorAll('.blue input')
+
+// form.onsubmit = (event) => {
+//     event.preventDefault()
+
+// }
+
+// inps.forEach(inp => {
+
+//     inp.onfocus = () => {
+//         inp.style.border = "3px solid blue"
+//     }
+
+//     inp.onblur = () => {
+//         if (inp.value.length > 0) {
+//             let user = {}
+//             let fm = new FormData(form)
+//             fm.forEach((value, key) => {
+//                 user[key] = value
+//             })
+//             console.log(user);
+//             imgs.forEach(img => {
+//                 img = img.style.display = "none"
+//             })
+
+//             inp.style.border = "3px solid green"
+//         } else {
+//             imgs.forEach(img => {
+//                 img = img.style.display = "block"
+//             })
+//             inp.style.border = "3px solid red"
+
+//         }
+//     }
+
+// })
+
 
 form.onsubmit = (event) => {
     event.preventDefault()
+    let err = 0
+
     inps.forEach(inp => {
         inp.parentElement.classList.remove('red')
-
         if (inp.value.length < 1) {
-            err++
             inp.parentElement.classList.add('red')
-            console.log(inp.parentElement.classList.add('red'));
-            img.style.display = "block"
+            err++
+            
         }
     })
 
-    if (errCount == 0) {
+    if (errCount < 1) {
         let user = {}
-
         let fm = new FormData(form)
-
         fm.forEach((value, key) => {
             user[key] = value
         })
-
         console.log(user);
-    }
+    } 
+
 }
